@@ -1,0 +1,11 @@
+<div class={{this.classRoot}}>
+
+  <button class={{this.classDelBtn}} (click)="onDelete(book)">remove</button>
+
+  <button class={{this.classEditBtn}} (click)="openModal()">edit</button>
+
+  <span> title </span> <span class={{this.classText}}> {{book.title}} </span>
+  <br> <span>author</span> <span class={{this.classText}}> {{book.author}}</span>
+</div>
+
+<app-edit-book id="edit-book-modal" [book]="book"></app-edit-book>

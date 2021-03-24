@@ -1,0 +1,6 @@
+<app-book-list-item *ngFor="let book of books" [book]="book" (delBook)="delBook($event)">
+</app-book-list-item>
+
+<button class={{this.classBtn}} (click)="openModal('add-book-modal')">add a new book</button>
+
+<app-add-book id="add-book-modal"></app-add-book>
